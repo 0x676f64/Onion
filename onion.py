@@ -137,8 +137,8 @@ def start_onion():
 	print t()+" Fetching current IP..."
 	print t()+" CURRENT IP : "+bcolors.GREEN+ip()+bcolors.ENDC
 
-def stop_torghost():
-	print bcolors.RED+t()+"STOPPING torghost"+bcolors.ENDC
+def stop_onion():
+	print bcolors.RED+t()+"STOPPING onion"+bcolors.ENDC
 	print t()+" Flushing iptables, resetting to default",
 	IpFlush = """
 	iptables -P INPUT ACCEPT
